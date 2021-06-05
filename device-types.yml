@@ -1,0 +1,46 @@
+
+properties:
+  - color
+  - brightness
+  - temperature
+  - humidity
+  - speed
+  - mode
+  - direction
+  - name
+  - status: [on, off, standby, sleep]
+  
+device_types:
+   light:
+     - device: [light, bulb, lamp, table lamp, ceiling lamp, floor lamp]
+     - status
+     - brightness
+     - color
+     - mode
+
+   airconditioner:
+     - device: [airconditioner, aircon]
+     - status
+     - mode
+     - speed
+     - temperature
+     - direction
+
+   fan:
+     - device: [fan, floor fan, ceiling fan]
+     - status
+     - mode
+     - speed
+     - direction
+
+   heater:
+     - device: [heater]
+     - status
+     - temperature
+     - speed
+     - direction
+    
+   fridge:
+     - device: [fridge] 
+     - status
+     - temperature
