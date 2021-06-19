@@ -90,7 +90,7 @@ def change_color(f):
             dev_names = v1[0]['device']
             for dev_name in dev_names:
                 for color in color_list:
-                    obj = '[' + dev_name + '](' + k1 + ')'
+                    obj = make_entity(dev_name, 'device')
                     if flip_coin():
                         obj  = 'the ' + obj
                     obj = add_floor(add_room(obj))
@@ -130,7 +130,7 @@ def turn_on_off_intent(f, intent, action_list):
         if 'status' in v1:
             dev_names = v1[0]['device']
             for obj in dev_names:
-                obj = make_entity(obj, k1)
+                obj = make_entity(obj, 'device')
                 if flip_coin():
                     obj  = 'the ' + obj
                 obj = add_floor(add_room(obj))
