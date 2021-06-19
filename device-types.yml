@@ -25,6 +25,12 @@ device_types:
      - speed
      - temperature
      - direction
+   
+   tv:
+     - device: [tv, television]
+     - status
+     - volume
+     - channel
 
    fan:
      - device: [fan, floor fan, ceiling fan]
